@@ -1,0 +1,18 @@
+#To create a number guessing game, the program needs to select a random number between 1 and 100.
+
+import random 
+n = random.randrange(1, 100) 
+guess = int(input("please choose a number between 1 and 100: ")
+
+while n != guess: 
+  if guess < n: 
+    print("it is too low") 
+    guess = int(input("please choose a number again: ") 
+
+  elif guess > n: 
+    print("it is too high") 
+    guess = int(input("please choose a number again: ")
+
+  else: 
+    break 
+print("You have guessed it right") 
